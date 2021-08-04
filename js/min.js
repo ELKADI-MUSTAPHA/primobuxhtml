@@ -1,3 +1,7 @@
+
+
+
+
 const sr = ScrollReveal({
     origin: 'left',
     distance: '150px',
@@ -7,20 +11,24 @@ const sr = ScrollReveal({
 });
 
 
-sr.reveal(`.info`, {
+sr.reveal(`.info, .steps, .col.one, .col.three`, {
     interval: 150
 })
 
 
 const sr2 = ScrollReveal({
     origin: 'right',
-    distance: '100px',
+    distance: '150px',
     duration: 1500,
     reset: false
 });
-if(window.innerWidth > 768){
 
-    sr2.reveal(`.image-svg`, {
-        interval: 150
-    })
-}
+sr2.reveal(`.col.two`, {
+    interval: 150
+})
+// if(window.innerWidth > 768){
+
+//     sr2.reveal(``, {
+//         interval: 150
+//     })
+// }
