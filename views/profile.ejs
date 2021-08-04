@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PrimoBux - Your Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="EN">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Earn Free ROBUX by completing surveys & watching videos!">
+    <meta name="theme-color" content="#263238">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134844048-2"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/839027421264478209/856584821516926976/20210621_192148.png?width=550&height=225">
+</head>
+<body class="profile">
+    <header>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="/" class="navbar-brand logo">
+                <img
+                    src="https://media.discordapp.net/attachments/839027421264478209/856584821516926976/20210621_192148.png?width=550&height=225"
+                    class="img-fluid" style="height: 55px;" alt="Logo">
+            </a>
+                <ul>
+                    <li><a href="/index" class="home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
+                    <!-- < % if (user) { %> -->
+                    <li><a href="/earn" class="earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
+                    <li><a href="/withdraw" class="withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
+                    <li><a href="/profile" class="profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
+                    <li>
+                        <a class="js-scroll-trigger" href="withdraw">
+                            <!-- <span class="balance" id="balance"> < %- data.earnedRobux.toFixed(2) || '0.00' %></span> -->
+                            <img src="https://bloxearn.com/img/robux.svg" height="18px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="api/logout" class="js-scroll-trigger">Logout</a>
+                    </li>
+                    <!-- < % } else { %> -->
+                    <li>
+                        <a class="js-scroll-trigger LoginBTN">Login</a>
+                    </li>
+                    <!-- < % } %> -->
+                </ul>
+        </nav>
+    </header>
+    <main class="container py-5" style="margin-top: 76px;">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="info-card card special-color">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Profile</h5>
+                        <div class="card-text">
+                            <div class="profile-img">
+                                image profile
+                                <!-- <img src="https://www.roblox.com/headshot-thumbnail/image?userId=< %- user.id %>&width=420&height=420&format=png" width="100%" /> -->
+                            </div>
+                            <h3 class="text-center">
+                                <!-- < %- user.name %> --> username
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="info-card card special-color">
+                            <div class="card-body">
+                                <div class="card-text text-center ">
+                                    <h3>Robux earned</h3>
+                                    <h1 class="text-robux robuxline">
+                                        <!-- < %- data.earnedRobux.toFixed(2) || '0.00' %>  -->
+                                        <img src="https://bloxearn.com/img/robux.svg" height="33px">
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="info-card card special-color">
+                            <div class="card-body">
+                                <div class="card-text text-center">
+                                    <h3>Offers completed</h3>
+                                    <h1 class="text-primary">
+                                        <!-- < %- data.offersCompleted %> -->
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="info-card card special-color">
+                            <div class="card-body">
+                                <div class="card-text text-center">
+                                    <h3>Referral earnings</h3>
+                                    <h1 class="text-robux robuxline">
+                                        0.00 <img src="https://bloxearn.com/img/robux.svg" height="33px">
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="info-card card special-color">
+                            <div class="card-body">
+                                <div class="card-text text-center">
+                                    <h3>Users referred</h3>
+                                    <h1 class="text-info">0</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                        <div class="card card-rounded special-color">
+                            <h5 class="card-header text-center">Referral link</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <h5>Earn 10% of referral earnings for life from every single person you have referred!</h5>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <div class="form-group shadow-textarea">
+                                                <textarea class="form-control z-depth-1 special-color-dark text-white" rows="3">🔥 Hey! I just found the best website to earn free robux! It's named Bloxearn! 🔥You can find it here: https://bloxearn.com?r=2468267764                                                        </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-rounded special-color">
+                    <h5 class="card-header text-center">Referred users</h5>
+                    <div class="card-body">
+                        <div class="table-responsive text-nowrap">
+                            <table class="table text-white text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Referral earnings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#37474F" fill-opacity="1" d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,272C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
+<div id="snowflakeContainer">
+    <span class="snowflake"></span>
+</div>
+    <script src="https://bloxearn.com/js/jquery.min.js"></script>
+    <script src="https://bloxearn.com/js/popper.min.js"></script>
+    <script src="https://bloxearn.com/js/bootstrap.min.js"></script>
+    <script src="https://bloxearn.com/js/mdb.lite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuckadblock@3.2.1/fuckadblock.min.js" integrity="sha256-xjwKUY/NgkPjZZBOtOxRYtK20GaqTwUCf7WYCJ1z69w=" crossorigin="anonymous"></script>
+<script>
+function adBlockNotDetected() {
+	console.log('Thank you for not using an adblocker!');
+}
+    
+function adBlockDetected() {
+	Swal.fire({
+        customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false,
+        title: 'Adblocker detected!',
+        background: '#263238',
+        imageUrl: 'https://bloxearn.com/img/logowide.png',
+        imageAlt: 'Bloxearn logo',
+        text: "Please disable your adblock! Some offers may not work when using an adblocker!",
+        showCancelButton: false,
+        confirmButtonText: 'I disabled my adblock, let me in!',
+        focusConfirm: false,
+        allowOutsideClick: false
+    }).then((result) => {
+        if (result.value) location.reload();
+    });
+}
+
+if(typeof fuckAdBlock !== 'undefined' || typeof FuckAdBlock !== 'undefined') {
+	adBlockDetected();
+} else {
+	var importFAB = document.createElement('script');
+	importFAB.onload = function() {
+		fuckAdBlock.onDetected(adBlockDetected)
+		fuckAdBlock.onNotDetected(adBlockNotDetected);
+	};
+	importFAB.onerror = function() {
+		adBlockDetected(); 
+	};
+	importFAB.integrity = 'sha256-xjwKUY/NgkPjZZBOtOxRYtK20GaqTwUCf7WYCJ1z69w=';
+	importFAB.crossOrigin = 'anonymous';
+	importFAB.src = 'https://cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js';
+	document.head.appendChild(importFAB);
+}
+</script>
+    <script>
+        // var userdata = {
+        //     "loggedin": true,
+        //     "user_name": '< %- user.name %>',
+        //     "user_id": < %- user.id %>
+        // }
+    </script>
+  <script src="/js/script.js"></script>
+    <script src="https://bloxearn.com/js/all.js"></script>
+</body>
+
+</html>

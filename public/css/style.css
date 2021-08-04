@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =================== section navbar =============== */
+
+nav {
+    background-color: rgb(7, 10, 42);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+}
+.navbar-brand{
+    width: fit-content;
+    margin: 0 3rem;
+    position: relative;
+}
+.navbar-brand img{
+    max-width: 300px;
+    margin-top: 0.8rem;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+nav ul li .js-scroll-trigger, .LoginBtn {
+    color: #dfe1e2;
+    font-size: 17px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #e4e404f1, #e4e404f1 48%, rgb(7, 10, 42) 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.LoginBtn {
+    animation-name: buttonAnimation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes buttonAnimation {
+    0% {background-position:  100% 0;}
+    50% {background-position:  0 100%;}
+}
+    
+.js-scroll-trigger:hover, 
+body.home a.home,
+body.earn a.earn,
+body.profile a.profile,
+body.withdraw a.withdraw,
+body.groupwithdraw a.groupwithdraw,
+.LoginBtn:hover
+{
+    /* background: #e5ff52; */
+    transition: .5s;
+    color: rgb(3, 3, 85);
+    background-position: 0 100%;
+}
+.checkbtn{
+    color: #e5ff52;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/* ================ section lander ================== */
+
+.lander {
+    width: 100%;
+    background: rgb(1, 1, 22);
+    padding: 4rem 0 0;
+    display: flex;
+    height: 100vh;
+}
+.lander .info{
+    width: 50%;
+    float: left;
+    color: white;
+    position: relative;
+}
+.lander .info .text-uppercase{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    letter-spacing: 3px;
+}
+.lander .info .text-robux{
+    color: #FFFF00;
+}
+
+.lander .info .centering{
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lander .image{
+    width: 50%;
+    float: right;
+    position: relative;
+    background-color: #ffff26cc;
+}
+.lander .image2 {
+    display: none;
+}
+.lander .image img {
+    width: 600px;
+    position: absolute;
+    margin-top: 7rem;
+    padding-right: 4rem;
+    -webkit-filter: drop-shadow(10px 10px 10px rgb(24, 24, 24));
+    filter: drop-shadow(10px 10px 10px rgb(24, 23, 23));
+    animation-name: imgAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lander .image2 img {
+    width: 300px;
+    margin: 1rem auto;
+    -webkit-filter: drop-shadow(8px 8px 8px rgb(180, 179, 179));
+    filter: drop-shadow(8px 8px 8px rgb(180, 179, 179));
+    animation-name: imgAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes imgAnimation {
+    0%   { transform: scale(1) }
+    50% { transform: scale(1.1) }
+    100% { transform: scale(1) }
+}
+
+
+/* =============== section container ==================== */
+.container {
+    width: 100%;
+    padding: 2rem 1rem;
+
+}
+.margin-top {
+    margin-top: 4rem;
+}
+.container .steps{
+    display: flex;
+}
+.container .steps .step{
+    padding: 2rem;
+    background-color: rgb(2, 2, 31);
+    color: white;
+    margin: 0.5rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 15px 10px -4px rgb(128, 128, 128);
+    -moz-box-shadow: 10px 15px 10px -4px rgb(128, 128, 128);
+    box-shadow: 10px 15px 10px -4px rgb(128, 128, 128);
+}
+.container .steps .step .overlay{
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+}
+.container .steps .step .overlay .card-img-top{
+    width: 250px;
+}
+
+
+@media screen and (max-width: 940px) {
+    .checkbtn {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        background: rgb(7, 10, 42);
+        text-align: center;
+        transition: all .5s;
+        z-index: 9;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li .js-scroll-trigger {
+        padding-right: 2rem;
+        font-size: 20px;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+    }
+    .js-scroll-trigger:hover {
+        transition: .5s;
+        color: rgb(3, 3, 85);
+        background-position: 0 100%;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .lander .image img{
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .lander .image img{
+        width: 450px;
+        margin: 4rem auto;
+    }
+    .lander .info .text-uppercase{
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+    .lander .info .centering{
+        width: 90%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .lander {
+        display: inherit;
+        height: auto;
+    }
+    .lander .info {
+        width: 100%;
+        float: none;
+        height: 100vh;
+    }
+    .lander .image {
+        display: none;
+    }
+    .lander .image2 {
+        display: block;
+        margin: 1rem auto;
+    }
+    
+}
+
+@media screen and (max-width: 580px) {
+    .navbar-brand .img-fluid {
+        height: 60px !important;
+        margin-top: 0.3rem !important;
+    }
+    
+}
+
