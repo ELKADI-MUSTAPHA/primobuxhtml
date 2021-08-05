@@ -418,7 +418,7 @@ body.groupwithdraw a.groupwithdraw,
     line-height: 2;
 }
 .container.footer .ttl{
-    color: rgb(14, 255, 6);
+    color: rgb(198 213 212);
     margin: 2rem auto;
     font-size: 2rem;
     font-weight: 900;
@@ -537,8 +537,14 @@ body.groupwithdraw a.groupwithdraw,
         height: 60px !important;
         margin-top: 0.3rem !important;
     }
+    .container.margin-top {
+        padding: 2rem 0;
+    }
+    .container .steps {
+        width: 100%;
+    }
     .container .steps .step{
-        width: 90%;
+        width: 80%;
     }
     .container.stats .row .content_row .col{
         position: initial;
@@ -550,6 +556,9 @@ body.groupwithdraw a.groupwithdraw,
     }
     .container.footer {
         padding: 3rem 1rem;
+    }
+    .container.footer .ttl {
+        font-size: 1.8rem;
     }
     
 }
