@@ -61,6 +61,7 @@ nav ul li{
 nav ul li .links.brdr, .links.LoginBTN.brdr{
     background: rgb(231, 2, 33);
     padding: 1rem;
+    font-weight: bold;
     text-align: center;
     font-size: 1rem;
     border-radius: 30px;
@@ -85,9 +86,13 @@ nav ul li .links, .LoginBtn {
 }
 .swal2-container .swal2-actions .swal2-confirm.btn.btn-success, .swal2-cancel.btn.btn-danger {
     display: inline-block;
-    color: black;
+    color: #2e2d2d;
+    font-weight: bold;
     font-size: 20px;
+    border: none;
     padding: 15px 20px;
+    width: 140px;
+    margin: auto 0.2rem;
     border-radius: 3px;
     text-transform: uppercase;
     background: yellow;
@@ -104,27 +109,34 @@ nav ul li .links.withdraw {
     padding: 7px 24px;
 }
 nav .blc {
-    padding: 0.8rem;
+    padding: 0.1rem 0.8rem;
     position: relative;
-    padding-right: 1.8rem;
+    /* padding-right: 1.8rem; */
     margin-right: 1rem;
+    width: fit-content;
     border-radius: 15px;
+    margin: 0 auto;
     color: white;
-    display: initial;
+    display: inline-block;
+    line-height: 40px;
     background: rgb(0, 0, 0);
-    box-shadow: 0 1px 15px 2px rgba(251, 255, 0, 0.75), 0 1px 8px 1px rgb(238, 255, 0);
+    box-shadow: 0 1px 15px 1px rgba(251, 255, 0, 0.75), 0 0 8px 0 rgb(238, 255, 0);
+}
+nav .blc a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav ul li .withdraw .balance {
-    color: rgb(231, 229, 229);
-    font-size: 1.3rem;
+    color: rgb(200, 199, 199);
+    font-size: 1.2rem;
     font-weight: bold;
     margin-right: 0.2rem;
 }
 
 nav ul li .withdraw .earning{
     filter: invert(8%) sepia(100%) saturate(1034%) hue-rotate(357deg) brightness(102%) contrast(108%);
-    position: absolute;
-    top: 0.5rem;
     width: 25px;
     height: 25px;
 }
@@ -430,6 +442,7 @@ body.groupwithdraw a.groupwithdraw,
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
+    text-align: center;
 }
 
 
@@ -451,17 +464,17 @@ body.groupwithdraw a.groupwithdraw,
 }
 .container.stats .row .content_row .col .card .card-body .stat{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #useramount, #paidout, #stock {
     font-size: 1.8rem;
     color: #ffb919;
     font-weight: 900;
-    position: absolute;
 }
-#useramount {
-    top: -0.3rem;
-}
+
 
 
 
@@ -516,6 +529,10 @@ body.groupwithdraw a.groupwithdraw,
     width: 70%;
     margin: 3rem auto;
     background: #001f3a;
+}
+
+.swal2-file, .swal2-input, .swal2-textarea {
+    color: white;
 }
 @media screen and (max-width: 940px) {
     .checkbtn {
@@ -572,9 +589,9 @@ body.groupwithdraw a.groupwithdraw,
         margin: 3rem auto;
         padding: 2rem 1rem 4rem;
     }
-    nav .blc {
+    /* nav .blc {
         line-height: 3;
-    }
+    } */
 
     .container.stats .row .content_row .col{
         width: 40%;
@@ -586,7 +603,10 @@ body.groupwithdraw a.groupwithdraw,
     .container.stats .row .content_row .col.two{
         right: 7%;
     }
-    
+    nav ul .ending {
+        right: auto;
+        position: initial;
+    }
     
    
 }
@@ -612,6 +632,16 @@ body.groupwithdraw a.groupwithdraw,
         width: 100%;
     }
     
+    .container.stats .row .content_row .col .card {
+        width: 100%;
+    }
+
+        
+    .container.stats .row .content_row .col .card .card-body{
+        width: 100%;
+        padding-left: 1.5rem;
+    }
+
     
 }
 @media screen and (max-width: 700px) {
@@ -652,9 +682,6 @@ body.groupwithdraw a.groupwithdraw,
         width: 80%;
     }
     
-    .container.stats .row .content_row .col .card .card-body .stat {
-        left: -2rem;
-    }
     .container.footer .card-body{
         width: 98%;
     }
