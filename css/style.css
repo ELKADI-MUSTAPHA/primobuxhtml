@@ -503,6 +503,9 @@ body.groupwithdraw a.groupwithdraw,
         margin: 3rem auto;
         padding: 2rem 1rem 4rem;
     }
+    nav ul li .js-scroll-trigger.withdraw .earning{
+        top: 0.5rem;
+    }
     
 }
 
