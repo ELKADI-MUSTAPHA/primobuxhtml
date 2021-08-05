@@ -37,19 +37,21 @@
                 <li><a href="#" class="earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
                 <li><a href="#" class="withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
                 <li><a href="#" class="profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
-                <li>
-                    <a class="js-scroll-trigger" href="withdraw">
-                        <!-- <span class="balance" id="balance"> < %- data.earnedRobux.toFixed(2) || '0.00' %></span> -->
-                        <img src="https://bloxearn.com/img/robux.svg" height="18px">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="js-scroll-trigger">Logout</a>
-                </li>
-                <!-- < % } else { %> -->
-                <li>
-                    <a class="js-scroll-trigger LoginBTN">Login</a>
-                </li>
+                <div class="to_right">
+                    <li>
+                        <a class="js-scroll-trigger" href="withdraw">
+                            <!-- <span class="balance" id="balance"> < %- data.earnedRobux.toFixed(2) || '0.00' %></span> -->
+                            <img src="https://bloxearn.com/img/robux.svg" height="18px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="js-scroll-trigger brdr">Logout</a>
+                    </li>
+                    <!-- < % } else { %> -->
+                    <li>
+                        <a class="js-scroll-trigger LoginBTN brdr">Login</a>
+                    </li>
+                </div>
                 <!-- < % } %> -->
             </ul>
     </nav>
@@ -70,8 +72,10 @@
         </div>
 
         <div class="image">
-            <img src="https://cdn.discordapp.com/attachments/839027421264478209/853729207544709150/199779424_859401967982840_7807174879897830688_n.png"
-                alt="character" class="image-svg">
+            <div class="centering">
+                <img src="https://cdn.discordapp.com/attachments/839027421264478209/853729207544709150/199779424_859401967982840_7807174879897830688_n.png"
+                    alt="character" class="image-svg">
+            </div>
         </div>
     </section>
     <section class="text-center" id="steps">
@@ -139,8 +143,7 @@
                         <div class="card-body">
                             <h3>Cashed Out</h3>
                             <div class="stat">
-                                <i class="fas fa-money-bill"></i>
-                                <!-- <img src="https://bloxearn.com/img/robux.svg" height="40px"> -->
+                                <img src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="40px">
                                 <span id="paidout">0</span>
                             </div>
                         </div>
@@ -151,8 +154,7 @@
                         <div class="card-body">
                             <h3>Stock</h3>
                             <div class="stat">
-                                <i class="fas fa-box-open"></i>
-                                <!-- <img src="https://bloxearn.com/img/robux.svg" height="40px"> -->
+                                <img src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="40px">
                                 <span id="stock">
                                     <!-- < %- stock %> -->0
                                 </span>
