@@ -73,6 +73,20 @@ nav ul li .js-scroll-trigger, .LoginBtn {
     cursor: pointer;
 }
 
+nav ul li .js-scroll-trigger.withdraw {
+    position: relative;
+    padding: 7px 24px;
+}
+nav ul li .js-scroll-trigger.withdraw .balance {
+    margin-right: 0.3rem;
+}
+
+nav ul li .js-scroll-trigger.withdraw .earning{
+    filter: invert(8%) sepia(100%) saturate(1034%) hue-rotate(357deg) brightness(102%) contrast(108%);
+    position: absolute;
+    top: 0.2rem;
+}
+
 .LoginBtn {
     animation-name: buttonAnimation;
     animation-duration: 2.5s;
@@ -549,7 +563,7 @@ body.groupwithdraw a.groupwithdraw,
     .container.stats .row .content_row .col{
         position: initial;
         margin: 2rem auto;
-        width: 85%;
+        width: 90%;
     }
     .container.footer .card-body{
         width: 98%;
