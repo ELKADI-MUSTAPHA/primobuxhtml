@@ -311,6 +311,12 @@ body.groupwithdraw a.groupwithdraw,
     width: 90%;
     text-align: center;
 }
+.container .steps .step .overlay.withdraw{
+    margin: 0 auto;
+}
+.container .steps .step .overlay.withdraw .card-img-top{
+    width: 250px;
+}
 .container .steps .step .overlay .card-img-top{
     width: 300px;
     margin: 0 auto;
