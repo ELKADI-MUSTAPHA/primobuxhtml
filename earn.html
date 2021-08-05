@@ -9,9 +9,11 @@
     <meta name="description" content="Earn Free ROBUX by completing surveys & watching videos!">
     <meta name="theme-color" content="#263238">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134844048-2"></script>
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+
     <link rel="icon" href="https://media.discordapp.net/attachments/839027421264478209/856584821516926976/20210621_192148.png?width=550&height=225">
 </head>
 <body class="earn">
@@ -21,41 +23,45 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a href="/" class="navbar-brand logo">
+            <a href="/index.html" class="navbar-brand logo">
                 <img
                     src="https://media.discordapp.net/attachments/839027421264478209/856584821516926976/20210621_192148.png?width=550&height=225"
                     class="img-fluid" style="height: 55px;" alt="Logo">
             </a>
                 <ul>
-                    <li><a href="/index" class="home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
+                    <li><a href="/index.html" class="home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
                     <!-- < % if (user) { %> -->
-                    <li><a href="/earn" class="earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
-                    <li><a href="/withdraw" class="withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
-                    <li><a href="/profile" class="profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
-                    <li>
-                        <a class="js-scroll-trigger" href="withdraw">
-                            <!-- <span class="balance" id="balance"> < %- data.earnedRobux.toFixed(2) || '0.00' %></span> -->
-                            <img src="https://bloxearn.com/img/robux.svg" height="18px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="api/logout" class="js-scroll-trigger">Logout</a>
-                    </li>
-                    <!-- < % } else { %> -->
-                    <li>
-                        <a class="js-scroll-trigger LoginBTN">Login</a>
-                    </li>
+                    <li><a href="/earn.html" class="earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
+                    <li><a href="/withdraw.html" class="withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
+                    <li><a href="/profile.html" class="profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
+                    <div class="to_right">
+                        <li>
+                            <a class="js-scroll-trigger withdraw" href="withdraw.html">
+                                <span class="balance" id="balance">
+                                     <!-- < %- data.earnedRobux.toFixed(2) || '0.00' %> -->0.00
+                                    </span> 
+                                <img class="earning" src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="18px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="js-scroll-trigger brdr">Logout</a>
+                        </li>
+                        <!-- < % } else { %> -->
+                        <li>
+                            <a class="js-scroll-trigger LoginBTN brdr">Login</a>
+                        </li>
+                    </div>
                     <!-- < % } %> -->
                 </ul>
         </nav>
-    </header>
+        </header>
     <main class="container">
-        <div class="mt-5 p-lg-5">
+        <div class="earn-container">
             <div class="row">
-                <div class="col-12">
+                <div class="col">
                     <h1>Earn</h1>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <div class="card">
                         <div class="card-body">
                             <h3>Offerwalls</h3>
@@ -68,8 +74,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="offerwallholder mt-2" style="height: 1000px;">
+                <div class="col">
+                    <div class="offerwallholder">
                         <iframe id="offerwall" frameborder="0" width="100%" height="100%"></iframe>
                     </div>
                 </div>
@@ -77,9 +83,7 @@
         </div>
     </main>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#37474F" fill-opacity="1" d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,272C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-</svg>
+    
 <div id="snowflakeContainer">
     <span class="snowflake"></span>
 </div>
