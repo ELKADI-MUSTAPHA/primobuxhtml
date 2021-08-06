@@ -29,13 +29,14 @@
                     class="img-fluid" style="height: 55px;" alt="Logo">
             </a>
                 <ul>
-                    <li><a href="/index.html" class="home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
+                    <li><a href="/index.html" class="links home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
                     <!-- < % if (user) { %> -->
-                    <li><a href="/earn.html" class="earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
-                    <li><a href="/withdraw.html" class="withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
-                    <li><a href="/profile.html" class="profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
+                    <li><a href="/earn.html" class="links earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
+                    <li><a href="/withdraw.html" class="links withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
+                    <li><a href="/groupwithdraw.html" class="links groupwithdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i>Group</a></li>
+                    <li><a href="/profile.html" class="links profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
                     <div class="to_right">
-                        <li>
+                        <li class="blc">
                             <a class="js-scroll-trigger withdraw" href="withdraw.html">
                                 <span class="balance" id="balance">
                                      <!-- < %- data.earnedRobux.toFixed(2) || '0.00' %> -->0.00
@@ -44,71 +45,69 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="js-scroll-trigger brdr">Logout</a>
+                            <a href="#" class="links js-scroll-trigger brdr">Logout</a>
                         </li>
                         <!-- < % } else { %> -->
-                        <li>
-                            <a class="js-scroll-trigger LoginBTN brdr">Login</a>
+                        <li class="ending">
+                            <a class="links js-scroll-trigger LoginBTN brdr">Login</a>
                         </li>
                     </div>
                     <!-- < % } %> -->
                 </ul>
         </nav>
         </header>
-    <main class="container">
+    <main class="container withdraw">
 
-        <div class="mt-5 p-5">
-            <div class="row justify-content-center">
+            <div class="row two">
 
-                <div class="col-lg-4 col-md-6 p-2">
-                    <div class="info-card card card-rounded special-color">
-                        <div class="card-body text-center h1">
+                <div class="col">
+                    <div class="info-card">
+                        <div class="card-body">
                             <div class="h3">Balance</div>
-                            <div class="robuxline">
+                            <div class="primobux">
                                 <span class="balance">0.00</span>
-                                <img src="https://bloxearn.com/img/robux.svg" height="33px" alt="robux">
+                                <img src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="33px" alt="robux">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-2">
-                    <div class="info-card card special-color">
+                <div class="col">
+                    <div class="info-card">
                         <div class="card-body text-center h1">
                             <div class="h3">Stock</div>
-                            <div class="robuxline">
-                                <span class="groupstock">
+                            <div class="primobux">
+                                <span class="vipstock">
                                     <!-- < %- stock %> -->0
                                 </span>
-                                <img src="https://bloxearn.com/img/robux.svg" height="33px">
+                                <img src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="33px">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
 
 
 
-        <div class="row">
+        <div class="row three">
 
-            <div class="col-sm-12 col-md-6">
+            <div class="col grp">
 
-                <div class="card card-rounded special-color">
+                <div class="card-rounded">
 
-                    <div class="card-header text-center">
+                    <div class="card-header">
 
                         Withdraw
 
                     </div>
 
-                    <div class="card-body text-center">
+                    <div class="card-body">
 
                         <h1>Group withdraw</h1>
 
                         <img class="rounded m-1" src="https://bloxearn.com/img/treasure.svg" height="200px" alt="treasure icon">
 
-                        <p>To withdraw your earnings simply press the button below!</p>
+                        <p class="light-p">To withdraw your earnings simply press the button below!</p>
 
                         <input type="number" step="1" min="1" placeholder="amount" class="form-control mb-3" id="amount">
 
@@ -122,12 +121,12 @@
 
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="card card-rounded special-color">
-                    <div class="card-header text-center">Your withdrawals</div>
+            <div class="col last">
+                <div class="card-rounded">
+                    <div class="card-header">Your withdrawals</div>
                     <div class="card-body">
-                        <div class="table-responsive text-nowrap">
-                            <table class="table text-white text-center">
+                        <div class="table-responsive">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -140,12 +139,12 @@
                                 <tbody>
                                     <tr>
                                       <th>47420</th>
-                                      <td>90 <img src="https://bloxearn.com/img/robux.svg" height="18px"></td>
+                                      <td>90 <img src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="18px"></td>
                                       <td><span class="badge badge-success">Completed</span></td>
                                   </tr>
                                   <tr>
                                     <th>47304</th>
-                                    <td>121 <img src="https://bloxearn.com/img/robux.svg" height="18px">
+                                    <td>121 <img src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="18px">
                                     </td>
                                     <td><span class="badge badge-success">Completed</span></td>
                                   </tr>
@@ -168,9 +167,64 @@
 
     </main>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#37474F" fill-opacity="1" d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,272C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-</svg>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col one slide">
+                    <h5 class="text-uppercase">Follow us!</h5>
+                    <!-- <hr class="white"> -->
+                    <ul class="list-unstyled">
+                            <li style="color: #C4302B">
+                                <i class="fab fa-youtube mr-2"></i>
+                                <a href="https://www.youtube.com/channel/UCmEL0P9Esd38WHaDGqFNg4Q?sub_confirmation=1" target="_blank" rel="noopener"><b>Youtube</b></a>
+                            </li>
+                            <li style="color: #C4302B">
+                                <i class="fab fa-youtube mr-2"></i>
+                                <a href="https://www.youtube.com/channel/UCjLRgW9dJI1qRt0dnT5c8WQ?sub_confirmation=1" target="_blank" rel="noopener"><b>Youtube</b></a>
+                            </li>
+                            <li style="color: #6CADDE">
+                                <i class="fab fa-twitter mr-2"></i>
+                                <a href="https://twitter.com/bloxearn" target="_blank" rel="noopener"><b>Twitter</b></a>
+                            </li>
+                            <li style="color: #7289DA">
+                                <i class="fab fa-discord mr-2"></i>
+                                <a href="https://discord.com/invite/fDQK5MX" target="_blank" rel="noopener"><b>Discord</b></a>
+                            </li>
+                            <li style="color: #d6249f">
+                                <i class="fab fa-instagram mr-2"></i>
+                                <a href="https://www.instagram.com/bloxearn/" target="_blank" rel="noopener"><b>Instagram</b></a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col slide">
+                    <h5 class="text-uppercase">About us</h5>
+                    <!-- <hr class="white"> -->
+                    <p>
+                        What is Primobux.com? Primobux.com is a website focused on awarding free currency, we pay out the highest rates out of all our competitors which is guaranteed to satisfy you. Primobux.com is completely safe and free to use.
+                    </p>
+                </div>
+                <div class="col slide">
+                    <h5 class="text-uppercase">How does it work?</h5>
+                    <!-- <hr class="white"> -->
+                    <p>
+                        We do not ask for or need any personal information. You complete offers on the website and earn currency which you can instantly withdraw to your account. Every offer completed our partners pay us, we invest a portion of that money into currency for payouts, creating a fair and win-win situation for both parties.
+                    </p>
+                </div>
+            </div>
+            <hr class="white-hr">
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    © Primobux 2021
+                    <span class="ml-5">Made By Primobux</span>
+                    <a href="https://twitter.com/DevMustapha" style="display: none;"> designed by mustapha ettanti </a>
+                </div>
+                <div class="container-fluid">
+                    <b>We are not affiliated with ROBLOX Corporation.</b>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
 <div id="snowflakeContainer">
     <span class="snowflake"></span>
 </div>

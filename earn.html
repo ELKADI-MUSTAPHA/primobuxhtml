@@ -29,13 +29,14 @@
                     class="img-fluid" style="height: 55px;" alt="Logo">
             </a>
                 <ul>
-                    <li><a href="/index.html" class="home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
+                    <li><a href="/index.html" class="links home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
                     <!-- < % if (user) { %> -->
-                    <li><a href="/earn.html" class="earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
-                    <li><a href="/withdraw.html" class="withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
-                    <li><a href="/profile.html" class="profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
+                    <li><a href="/earn.html" class="links earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
+                    <li><a href="/withdraw.html" class="links withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
+                    <li><a href="/groupwithdraw.html" class="links groupwithdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i>Group</a></li>
+                    <li><a href="/profile.html" class="links profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
                     <div class="to_right">
-                        <li>
+                        <li class="blc">
                             <a class="js-scroll-trigger withdraw" href="withdraw.html">
                                 <span class="balance" id="balance">
                                      <!-- < %- data.earnedRobux.toFixed(2) || '0.00' %> -->0.00
@@ -44,11 +45,11 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="js-scroll-trigger brdr">Logout</a>
+                            <a href="#" class="links js-scroll-trigger brdr">Logout</a>
                         </li>
                         <!-- < % } else { %> -->
-                        <li>
-                            <a class="js-scroll-trigger LoginBTN brdr">Login</a>
+                        <li class="ending">
+                            <a class="links js-scroll-trigger LoginBTN brdr">Login</a>
                         </li>
                     </div>
                     <!-- < % } %> -->
@@ -58,23 +59,27 @@
     <main class="container">
         <div class="earn-container">
             <div class="row">
-                <div class="col">
-                    <h1>Earn</h1>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>Offerwalls</h3>
-                            <button class="btn btn-primary btn-block my-2" onclick="loadwall(0)">Adgate <span class="badge badge-success">Easy</span></button>
-                            <button class="btn btn-primary btn-block my-2" onclick="loadwall(1)">Offertoro</button>
-                            <button class="btn btn-primary btn-block my-2" onclick="loadwall(2)">Adgem</button>
-                            <button class="btn btn-primary btn-block my-2" onclick="loadwall(3)">AyeT Studios</button>
-                            <button class="btn btn-primary btn-block my-2" onclick="loadwall(4)">Lootably</button>
-                            <button class="btn btn-primary btn-block my-2" onclick="loadwall(5)">CPXResearch</button>
+                <div class="part-one">
+                    <div class="col">
+                        <h1 class="earn">Earn</h1>
+                    </div>
+                    <div class="col offerwalls">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="offerwalls">Offerwalls</h3>
+                                <div class="btns">
+                                    <button class="btn-primary one" onclick="loadwall(0)">Adgate <span class="badge-success">Easy</span></button>
+                                    <button class="btn-primary" onclick="loadwall(1)">Offertoro</button>
+                                    <button class="btn-primary" onclick="loadwall(2)">Adgem</button>
+                                    <button class="btn-primary" onclick="loadwall(3)">AyeT Studios</button>
+                                    <button class="btn-primary" onclick="loadwall(4)">Lootably</button>
+                                    <button class="btn-primary" onclick="loadwall(5)">CPXResearch</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col exeption">
                     <div class="offerwallholder">
                         <iframe id="offerwall" frameborder="0" width="100%" height="100%"></iframe>
                     </div>
@@ -82,7 +87,64 @@
             </div>
         </div>
     </main>
-
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col one slide">
+                    <h5 class="text-uppercase">Follow us!</h5>
+                    <!-- <hr class="white"> -->
+                    <ul class="list-unstyled">
+                            <li style="color: #C4302B">
+                                <i class="fab fa-youtube mr-2"></i>
+                                <a href="https://www.youtube.com/channel/UCmEL0P9Esd38WHaDGqFNg4Q?sub_confirmation=1" target="_blank" rel="noopener"><b>Youtube</b></a>
+                            </li>
+                            <li style="color: #C4302B">
+                                <i class="fab fa-youtube mr-2"></i>
+                                <a href="https://www.youtube.com/channel/UCjLRgW9dJI1qRt0dnT5c8WQ?sub_confirmation=1" target="_blank" rel="noopener"><b>Youtube</b></a>
+                            </li>
+                            <li style="color: #6CADDE">
+                                <i class="fab fa-twitter mr-2"></i>
+                                <a href="https://twitter.com/bloxearn" target="_blank" rel="noopener"><b>Twitter</b></a>
+                            </li>
+                            <li style="color: #7289DA">
+                                <i class="fab fa-discord mr-2"></i>
+                                <a href="https://discord.com/invite/fDQK5MX" target="_blank" rel="noopener"><b>Discord</b></a>
+                            </li>
+                            <li style="color: #d6249f">
+                                <i class="fab fa-instagram mr-2"></i>
+                                <a href="https://www.instagram.com/bloxearn/" target="_blank" rel="noopener"><b>Instagram</b></a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col slide">
+                    <h5 class="text-uppercase">About us</h5>
+                    <!-- <hr class="white"> -->
+                    <p>
+                        What is Primobux.com? Primobux.com is a website focused on awarding free currency, we pay out the highest rates out of all our competitors which is guaranteed to satisfy you. Primobux.com is completely safe and free to use.
+                    </p>
+                </div>
+                <div class="col slide">
+                    <h5 class="text-uppercase">How does it work?</h5>
+                    <!-- <hr class="white"> -->
+                    <p>
+                        We do not ask for or need any personal information. You complete offers on the website and earn currency which you can instantly withdraw to your account. Every offer completed our partners pay us, we invest a portion of that money into currency for payouts, creating a fair and win-win situation for both parties.
+                    </p>
+                </div>
+            </div>
+            <hr class="white-hr">
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    © Primobux 2021
+                    <span class="ml-5">Made By Primobux</span>
+                    <a href="https://twitter.com/DevMustapha" style="display: none;"> designed by mustapha ettanti </a>
+                </div>
+                <div class="container-fluid">
+                    <b>We are not affiliated with ROBLOX Corporation.</b>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
     
 <div id="snowflakeContainer">
     <span class="snowflake"></span>

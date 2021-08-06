@@ -11,7 +11,7 @@ const sr = ScrollReveal({
 });
 
 
-sr.reveal(`.info, .steps, .col.one, .col.three`, {
+sr.reveal(`.info, .steps, .col.one, .col.three, .slide`, {
     interval: 150
 })
 
