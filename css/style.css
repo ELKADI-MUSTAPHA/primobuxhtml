@@ -179,7 +179,7 @@ nav ul li .links.withdraw {
     padding: 7px 24px;
 }
 nav .blc {
-    padding: 0.3rem 0.7rem;
+    padding: 0.2rem 0.7rem;
     position: relative;
     /* padding-right: 1.8rem; */
     margin-right: 1rem;
@@ -199,7 +199,7 @@ nav .blc a{
     justify-content: center;
 }
 nav ul li .withdraw .balance {
-    color: rgb(194 214 11);
+    color: rgb(183 231 189);
     font-size: 1rem;
     font-weight: bold;
     margin-right: 0.2rem;
@@ -597,7 +597,7 @@ body.groupwithdraw a.groupwithdraw,
     display: flex;
     padding: 2rem;
     justify-content: center;
-    color: rgb(185, 181, 181);
+    color: rgb(239 239 239);
 }
 
 .page-footer .row .col{
@@ -620,7 +620,7 @@ body.groupwithdraw a.groupwithdraw,
 .page-footer .row .col.one .list-unstyled li a{
     font-size: 1rem;
     text-decoration: none;
-    color: rgb(180, 179, 179);
+    color: rgb(224 222 222);
     letter-spacing: 3px;
     margin-left: 0.5rem;
 }
@@ -651,7 +651,7 @@ body.groupwithdraw a.groupwithdraw,
 }
 
 .footer-copyright {
-    color: #909090;
+    color: #dddddd;
     text-align: center;
 }
 
@@ -669,7 +669,7 @@ body.groupwithdraw a.groupwithdraw,
     padding: 0.5rem 2rem 2rem;
     color: white;
     width: 70%;
-    background: #193b59;
+    background: #00172c;
     box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
 }
 .earn-container .row .part-one .col.offerwalls{
@@ -677,6 +677,7 @@ body.groupwithdraw a.groupwithdraw,
 }
 .earn-container .row .part-one .col .earn{
     color: yellow;
+    margin-bottom: 3rem;
 }
 .earn-container .row .part-one .col .btns{
     display: flex;
@@ -731,10 +732,10 @@ body.groupwithdraw a.groupwithdraw,
 
 .earn-container .row .part-one .col .btn-primary {
     box-shadow: 0 1px 10px 1px rgb(123 223 253 / 75%), 0 1px 10px 1px rgb(126 224 253 / 22%);
-    background: black;
-    padding: 0.5rem 0.8rem;
+    background: #03057d;
+    padding: 0.7rem 0.8rem;
     border: none;
-    color: rgb(195, 195, 195);
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -752,14 +753,14 @@ body.groupwithdraw a.groupwithdraw,
     padding: 0.5rem 2rem;
     color: white;
     width: 70%;
-    background: #001f3a;
+    background: #00172c;
     box-shadow: 0 2px 10px 4px rgba(123, 223, 253, 0.75), 0 10px 8px 6px rgba(126, 224, 253, 0.22);
     padding: 0;
 }
 
 .earn-container .row .col .offerwallholder{
     height: 1000px;
-    background: #193b59;
+    background: #00172c;
     box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
 }
 
@@ -779,7 +780,7 @@ body.groupwithdraw a.groupwithdraw,
     width: 70%;
     margin: 0.5rem auto;
     padding: 2rem;
-    color: rgb(212, 211, 211);
+    color: rgb(249 248 248);
 }
 
 
@@ -796,14 +797,14 @@ body.groupwithdraw a.groupwithdraw,
     text-align: center;
     padding: 2rem 1rem;
     margin: auto 2rem;
-    background: #193b59;
+    background: #00172c;
     box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
 }
 
 .container.withdraw .row.two .col .h3{
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: rgb(207, 204, 204);
+    color: rgb(245 245 245);
 }
 
 
@@ -834,7 +835,7 @@ body.groupwithdraw a.groupwithdraw,
     text-align: center;
     padding: 2rem 1rem;
     margin: auto 2rem;
-    background: #193b59;
+    background: #00172c;
     box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
     min-height: 800px;
 }
@@ -892,13 +893,14 @@ body.groupwithdraw a.groupwithdraw,
 
 
 .container.withdraw  input, .container.withdraw button {
+    outline: none;
     font-size: 1.2rem;
     padding: 0.6rem 1.3rem;
     margin: 0 0.5rem 1rem;
-    color: rgb(224, 222, 222);
-    background: #00101d;
+    color: rgb(0 0 0);
+    background: #fbfbfbe8;
     box-shadow: 0 1px 10px 1px rgba(123, 223, 253, 0.75), 0 1px 8px 1px rgba(126, 224, 253, 0.22);
-    
+    font-weight: 500;
 }
 
 
@@ -975,14 +977,14 @@ body.groupwithdraw a.groupwithdraw,
     padding: 1rem 0;
     width: 80%;
     margin: 2rem auto;
-    color: rgb(206, 206, 206);
+    color: rgb(234 233 233);
 }
 
 .container.profile .row .col.one{
     width: 70%;
     padding: 2rem 1rem;
     text-align: center;
-    background: #193b59;
+    background: #00172c;
     box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
 }
 
@@ -1024,7 +1026,7 @@ body.groupwithdraw a.groupwithdraw,
     padding: 1.5rem;
     margin: 0 1rem 2rem;
     float: left;
-    background: #193b59;
+    background: #00172c;
     box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);}
 
 
@@ -1081,7 +1083,7 @@ body.groupwithdraw a.groupwithdraw,
 
 .container.profile .row.two .col{
     width: 100%;
-    background: #193b59;
+    background: #00172c;
     box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);    text-align: center;
     padding: 2rem 1rem;
 }
