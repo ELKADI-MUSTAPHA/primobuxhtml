@@ -1120,8 +1120,6 @@ body.groupwithdraw a.groupwithdraw,
     gap: 20px;
 }
 
-
-
 .container.profile .row.two .col table tr th{
     width: 50%;
     padding-bottom: 0.6rem;
@@ -1129,6 +1127,58 @@ body.groupwithdraw a.groupwithdraw,
 }
 
 
+
+/* =========================== promocode section =================== */
+
+.container.withdraw.promocodes .row {
+    width: 90%;
+    gap: 0;
+}
+
+.container.withdraw.promocodes .row.two .col {
+    width: 100%;
+    padding: 2rem;
+    min-height: 500px;
+}
+
+.container.withdraw.promocodes .row.two .col .h3 {
+    font-size: 1.3rem;
+    color: yellow;
+}
+
+.container.withdraw.promocodes .row.two .col .primobux p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.container.withdraw.promocodes .row.two .col input {
+    width: 90%;
+    background-color: rgb(231, 231, 231);
+}
+.container.withdraw.promocodes .row.two .col button {
+    background-color: transparent;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.container.withdraw.promocodes .row.two .col table {
+    text-align: center;
+    margin: 0.5rem auto;
+    width: 100%;
+}
+
+.container.withdraw.promocodes .row.two .col table tr {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container.withdraw.promocodes .row.two .col table tr th {
+    width: 50%;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid yellow;
+}
 @media screen and (min-width: 1300px) {
     .container.profile .row .col.one .profile-img img {
         width: 60%;
@@ -1247,6 +1297,15 @@ body.groupwithdraw a.groupwithdraw,
     .earn-container .row .part-one .col .btns .btn-primary.one {
         display: initial;
     }
+    
+    .container.withdraw.promocodes .row {
+        display: inherit;
+    }
+    
+    .container.withdraw.promocodes .row  .col{
+        margin: 2rem auto !important;
+    }
+
 }
 
 

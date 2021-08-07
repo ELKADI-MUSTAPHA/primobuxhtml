@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PrimoBux - Promocodes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="EN">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Earn Free ROBUX by completing surveys & watching videos!">
+    <meta name="theme-color" content="#263238">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134844048-2"></script>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <link rel="icon" href="https://media.discordapp.net/attachments/839027421264478209/856584821516926976/20210621_192148.png?width=550&height=225">
+</head>
+<body class="withdraw">
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+    <header>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="/index.html" class="navbar-brand logo">
+                <img
+                    src="https://media.discordapp.net/attachments/839027421264478209/856584821516926976/20210621_192148.png?width=550&height=225"
+                    class="img-fluid" style="height: 55px;" alt="Logo">
+            </a>
+                <ul>
+                    <li><a href="/index.html" class="links home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
+                    <!-- < % if (user) { %> -->
+                    <li><a href="/earn.html" class="links earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
+                    <li class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn links withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw <i class="fas fa-sort-down" style="font-size: 1.5rem;"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="/withdraw.html">Private server</a>
+                            <a href="/groupwithdraw.html">Group</a>
+                        </div>
+                    </li>
+                    <li><a href="/profile.html" class="links profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
+                    <div class="to_right">
+                        <li class="blc">
+                            <a class="js-scroll-trigger withdraw" href="withdraw.html">
+                                <span class="balance" id="balance">
+                                     <!-- < %- data.earnedRobux.toFixed(2) || '0.00' %> -->0.00
+                                    </span> 
+                                <img class="earning" src="https://cdn.discordapp.com/attachments/871833132381388860/872583815103664178/robux.png" height="18px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="links js-scroll-trigger brdr">Logout</a>
+                        </li>
+                        <!-- < % } else { %> -->
+                        <li class="ending">
+                            <a class="links js-scroll-trigger LoginBTN brdr">Login</a>
+                        </li>
+                    </div>
+                    <!-- < % } %> -->
+                </ul>
+        </nav>
+        </header>
+    <main class="container withdraw promocodes">
+
+        <div class="row two">
+            <div class="col one">
+                <div class="info-card">
+                    <div class="card-body">
+                        <div class="h3">Promocodes</div>
+                        <div class="primobux">
+                            <p>Promocodes are codes you can claim to get some free robux! These can be found on our Youtube channel, Twitter and in our Discord!</p>
+                        </div>
+                        <input type="text" name="promocodes" id="promocodes" placeholder="Promocode">
+                        <hr>
+                        <button>CLAIM PROMOCODE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col two">
+                <div class="info-card">
+                    <div class="card-body">
+                        <div class="h3">Redeemed codes</div>
+                        <div class="primobux">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Code</th>
+                                        <th>Reward</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col one slide">
+                    <h5 class="text-uppercase">Follow us!</h5>
+                    <!-- <hr class="white"> -->
+                    <ul class="list-unstyled">
+                        <li style="color: #4267B2">
+                            <i class="fab fa-facebook mr-2"></i>
+                            <a href="https://www.youtube.com/channel/UCmEL0P9Esd38WHaDGqFNg4Q?sub_confirmation=1" target="_blank" rel="noopener"><b>Facebook</b></a>
+                        </li>
+                            <li style="color: #C4302B">
+                                <i class="fab fa-youtube mr-2"></i>
+                                <a href="https://www.youtube.com/channel/UCjLRgW9dJI1qRt0dnT5c8WQ?sub_confirmation=1" target="_blank" rel="noopener"><b>Youtube</b></a>
+                            </li>
+                            <li style="color: #6CADDE">
+                                <i class="fab fa-twitter mr-2"></i>
+                                <a href="https://twitter.com/bloxearn" target="_blank" rel="noopener"><b>Twitter</b></a>
+                            </li>
+                            <li style="color: #7289DA">
+                                <i class="fab fa-discord mr-2"></i>
+                                <a href="https://discord.com/invite/fDQK5MX" target="_blank" rel="noopener"><b>Discord</b></a>
+                            </li>
+                            <li style="color: #d6249f">
+                                <i class="fab fa-instagram mr-2"></i>
+                                <a href="https://www.instagram.com/bloxearn/" target="_blank" rel="noopener"><b>Instagram</b></a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col slide">
+                    <h5 class="text-uppercase">About us</h5>
+                    <!-- <hr class="white"> -->
+                    <p>
+                        What is Primobux.com? Primobux.com is a website focused on awarding free currency, we pay out the highest rates out of all our competitors which is guaranteed to satisfy you. Primobux.com is completely safe and free to use.
+                    </p>
+                </div>
+                <div class="col slide">
+                    <h5 class="text-uppercase">How does it work?</h5>
+                    <!-- <hr class="white"> -->
+                    <p>
+                        We do not ask for or need any personal information. You complete offers on the website and earn currency which you can instantly withdraw to your account. Every offer completed our partners pay us, we invest a portion of that money into currency for payouts, creating a fair and win-win situation for both parties.
+                    </p>
+                </div>
+            </div>
+            <hr class="white-hr">
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    © Primobux 2021
+                    <span class="ml-5">Made By Primobux</span>
+                    <a href="https://twitter.com/DevMustapha" style="display: none;"> designed by mustapha ettanti </a>
+                </div>
+                <div class="container-fluid">
+                    <b>We are not affiliated with ROBLOX Corporation.</b>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+<div id="snowflakeContainer">
+    <span class="snowflake"></span>
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script>
+
+            
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+
+
+
+
+        // var userdata = {
+        //     "loggedin": true,
+        //     "user_name": '< %- user.name %>',
+        //     "user_id": < %- user.id %>
+        // }
+    </script>
+  <script src="/js/script.js"></script>
+    <script src="/js/all.js"></script>
+</body>
+
+</html>
