@@ -17,6 +17,9 @@
     <link rel="icon" href="https://media.discordapp.net/attachments/839027421264478209/856584821516926976/20210621_192148.png?width=550&height=225">
 </head>
 <body class="groupwithdraw">
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
     <header>
         <nav>
             <input type="checkbox" id="check" />
@@ -32,8 +35,13 @@
                     <li><a href="/index.html" class="links home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
                     <!-- < % if (user) { %> -->
                     <li><a href="/earn.html" class="links earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
-                    <li><a href="/withdraw.html" class="links withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
-                    <li><a href="/groupwithdraw.html" class="links groupwithdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i>Group</a></li>
+                    <li class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn links withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw <i class="fas fa-sort-down" style="font-size: 1.5rem;"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="/withdraw.html">Private server</a>
+                            <a href="/groupwithdraw.html">Group</a>
+                        </div>
+                    </li>
                     <li><a href="/profile.html" class="links profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
                     <div class="to_right">
                         <li class="blc">
@@ -105,7 +113,6 @@
 
                         <h1>Group withdraw</h1>
 
-                        <img class="rounded m-1" src="https://bloxearn.com/img/treasure.svg" height="200px" alt="treasure icon">
 
                         <p class="light-p">To withdraw your earnings simply press the button below!</p>
 
@@ -235,6 +242,27 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script>
+
+        
+function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+
+
+
         // var userdata = {
         //     "loggedin": true,
         //     "user_name": '< %- user.name %>',

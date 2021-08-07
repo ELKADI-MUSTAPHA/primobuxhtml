@@ -32,8 +32,13 @@
                     <li><a href="/index.html" class="links home js-scroll-trigger"><i class="fal fa-home mr-1"></i> Home</a></li>
                     <!-- < % if (user) { %> -->
                     <li><a href="/earn.html" class="links earn js-scroll-trigger"><i class="fal fa-wallet mr-1"></i> Earn</a></li>
-                    <li><a href="/withdraw.html" class="links withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw</a></li>
-                    <li><a href="/groupwithdraw.html" class="links groupwithdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i>Group</a></li>
+                    <li class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn links withdraw js-scroll-trigger"><i class="fal fa-sack mr-1"></i> Withdraw <i class="fas fa-sort-down" style="font-size: 1.5rem;"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="/withdraw.html">Private server</a>
+                            <a href="/groupwithdraw.html">Group</a>
+                        </div>
+                    </li>
                     <li><a href="/profile.html" class="links profile js-scroll-trigger"><i class="fal fa-user-alt mr-1"></i> Profile</a></li>
                     <div class="to_right">
                         <li class="blc">
@@ -68,12 +73,19 @@
                             <div class="card-body">
                                 <h3 class="offerwalls">Offerwalls</h3>
                                 <div class="btns">
-                                    <button class="btn-primary one" onclick="loadwall(0)">Adgate <span class="badge-success">Easy</span></button>
-                                    <button class="btn-primary" onclick="loadwall(1)">Offertoro</button>
-                                    <button class="btn-primary" onclick="loadwall(2)">Adgem</button>
-                                    <button class="btn-primary" onclick="loadwall(3)">AyeT Studios</button>
-                                    <button class="btn-primary" onclick="loadwall(4)">Lootably</button>
-                                    <button class="btn-primary" onclick="loadwall(5)">CPXResearch</button>
+                                    <a href="#Adgate" class="btn-primary one" onclick="addClass('Adgate')">Adgate <span class="badge-success">Easy</span></a>
+                                    <a href="#Offertoro" class="btn-primary" onclick="addClass('Offertoro')">Offertoro</a>
+                                    <a href="#Adgem" class="btn-primary" onclick="addClass('Adgem')">Adgem</a>
+                                    <a href="#Aye-t-studios" class="btn-primary" onclick="addClass('Aye-t-studios')">AyeT Studios</a>
+                                    <a href="#Lootably" class="btn-primary" onclick="addClass('Lootably')">Lootably</a>
+                                    <a href="#Cpx-research" class="btn-primary" onclick="addClass('Cpx-research')">CPXResearch</a>
+                                </div>
+                                <div class="btns two">
+                                    <button class="btn-primary fb"><i class="fab fa-facebook mr-1"></i> Subscribe for 0.5 R$</button>
+                                    <button class="btn-primary yt"><i class="fab fa-youtube mr-1"></i> Subscribe for 0.5 R$</button>
+                                    <button class="btn-primary tw"><i class="fab fa-twitter mr-1"></i> Follow us for 0.25 R$</button>
+                                    <button class="btn-primary dc"><i class="fab fa-discord mr-1"></i> Join for 0.5 R$</button>
+                                    <button class="btn-primary is"><i class="fab fa-instagram mr-1"></i> Follow for 0.5 R$</button>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +93,24 @@
                 </div>
                 <div class="col exeption">
                     <div class="offerwallholder">
-                        <iframe id="offerwall" frameborder="0" width="100%" height="100%"></iframe>
+                        <div class="tab-pane show active " id="Adgate" role="tabpanel">
+                            <iframe frameborder="0" width="100%" height="100%" src="https://wall.adgaterewards.com/nqybrw/USER_ID"></iframe>
+                        </div>
+                        <div class="tab-pane show" id="Offertoro" role="tabpanel">
+                            <iframe frameborder="0" width="100%" height="100%" src="https://www.offertoro.com/ifr/show/8927/USER_ID/7757"></iframe>
+                        </div>
+                        <div class="tab-pane show" id="Adgem" role="tabpanel">
+                            <iframe frameborder="0" width="100%" height="100%" src="https://api.adgem.com/v1/wall?appid=7757&playerid=USER_ID"></iframe>
+                        </div>
+                        <div class="tab-pane show" id="Aye-t-studios" role="tabpanel">
+                            <iframe frameborder="0" width="100%" height="100%" src="https://www.ayetstudios.com/offers/web_offerwall/1320/bloxearn?external_identifier=USER_ID"></iframe>
+                        </div>
+                        <div class="tab-pane show" id="Lootably" role="tabpanel">
+                            <iframe frameborder="0" width="100%" height="100%" src="https://wall.lootably.com/?placementID=ckd6lsu29003ftmshcrkd01ug&sid=USER_ID"></iframe>
+                        </div>
+                        <div class="tab-pane show" id="Cpx-research" role="tabpanel">
+                            <iframe frameborder="0" width="100%" height="100%" src="https://wall.cpx-research.com/index.php?app_id=7757&ext_user_id=USER_ID"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,6 +186,42 @@
     <script src="https://cdn.jsdelivr.net/npm/fuckadblock@3.2.1/fuckadblock.min.js" integrity="sha256-xjwKUY/NgkPjZZBOtOxRYtK20GaqTwUCf7WYCJ1z69w=" crossorigin="anonymous"></script>
 
     <script>
+        var className = "active";
+        
+        function addClass(id){
+         var el = document.getElementById(id);
+        
+            el.classList.add(className);
+
+            els = document.getElementsByClassName('tab-pane');
+
+
+            els.forEach(element => {
+                if(element.id != id){
+                    element.classList.remove(className);
+                }
+            });
+            
+        }
+        
+function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+
+
         // var userdata = {
         //     "loggedin": false,
         //     "user_name": 'roblox',
@@ -165,15 +230,15 @@
     </script>
     <script src="./js/all.js"></script>
     <script>
-        let offerwalls = ["https://wall.adgaterewards.com/nqybrw/USER_ID", 
-                          "https://www.offertoro.com/ifr/show/8927/USER_ID/7757",
-                          "https://api.adgem.com/v1/wall?appid=7757&playerid=USER_ID",
-                          "https://www.ayetstudios.com/offers/web_offerwall/1320/bloxearn?external_identifier=USER_ID",
-                          "https://wall.lootably.com/?placementID=ckd6lsu29003ftmshcrkd01ug&sid=USER_ID", 
-                          "https://wall.cpx-research.com/index.php?app_id=7757&ext_user_id=USER_ID"
-                         ];
+        // let offerwalls = ["https://wall.adgaterewards.com/nqybrw/USER_ID", 
+        //                   "https://www.offertoro.com/ifr/show/8927/USER_ID/7757",
+        //                   "https://api.adgem.com/v1/wall?appid=7757&playerid=USER_ID",
+        //                   "https://www.ayetstudios.com/offers/web_offerwall/1320/bloxearn?external_identifier=USER_ID",
+        //                   "https://wall.lootably.com/?placementID=ckd6lsu29003ftmshcrkd01ug&sid=USER_ID", 
+        //                   "https://wall.cpx-research.com/index.php?app_id=7757&ext_user_id=USER_ID"
+        //                  ];
 
-        loadwall(0);
+        // loadwall(0);
 
         getSocials()
     </script>
