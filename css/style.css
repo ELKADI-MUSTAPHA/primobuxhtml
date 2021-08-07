@@ -698,6 +698,20 @@ body.groupwithdraw a.groupwithdraw,
 .show.active {
     display: block;
 }
+.earn-container .row .part-one .col .btns.one .btn-primary {
+    box-shadow: none;
+    background: #00172c;
+    padding: 0.7rem 0.8rem;
+    border: 2px solid #dfdf06;
+    color: #fbfbfb;
+}
+.earn-container .row .part-one .col .btns.one .btn-primary:hover {
+    box-shadow: none;
+    background: yellow;
+    padding: 0.7rem 0.8rem;
+    border: 2px solid yellow;
+    color: rgb(0, 0, 0);
+}
 .earn-container .row .part-one .col .btns.two .btn-primary{
     margin: 1rem;
 }
