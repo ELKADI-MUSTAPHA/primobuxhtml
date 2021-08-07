@@ -1207,7 +1207,10 @@ body.groupwithdraw a.groupwithdraw,
         position: initial;
     }
     
-   
+    .dropdown-content {
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .earn-container .row .part-one, .earn-container .row .col.exeption{
         width: 85%;
     }
