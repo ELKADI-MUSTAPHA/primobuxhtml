@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+/* 
+© Primobux 2021 Made By Mustapha Ettanti "https://twitter.com/DevMustapha"  designed by Mustapha Ettanti */
 html {
     overflow-x: hidden;
 }
@@ -179,7 +181,7 @@ nav ul li .links.withdraw {
     padding: 7px 24px;
 }
 nav .blc {
-    padding: 0.2rem 0.7rem;
+    padding: 0.4rem 0.5rem;
     position: relative;
     /* padding-right: 1.8rem; */
     margin-right: 1rem;
@@ -190,7 +192,7 @@ nav .blc {
     display: inline-block;
     line-height: 35px;
     background: rgb(0, 0, 0);
-    box-shadow: 0 1px 15px 1px rgba(251, 255, 0, 0.75), 0 0 8px 0 rgb(238, 255, 0);
+    box-shadow: 0 1px 10px 1px rgba(251, 255, 0, 0.75), 0 0 8px 0 rgb(238, 255, 0);
 }
 nav .blc a{
     width: 100%;
@@ -199,9 +201,9 @@ nav .blc a{
     justify-content: center;
 }
 nav ul li .withdraw .balance {
-    color: rgb(183 231 189);
+    color: rgb(215 225 216);
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-right: 0.2rem;
 }
 
@@ -295,6 +297,9 @@ body.groupwithdraw a.groupwithdraw,
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* 
+© Primobux 2021 Made By Mustapha Ettanti "https://twitter.com/DevMustapha"  designed by Mustapha Ettanti */
 .lander .image2 {
     display: none;
 }
@@ -1074,6 +1079,9 @@ body.groupwithdraw a.groupwithdraw,
     color: rgb(228, 228, 228);
 }
 
+/* 
+© Primobux 2021 Made By Mustapha Ettanti "https://twitter.com/DevMustapha"  designed by Mustapha Ettanti */
+
 .container.profile .row .col.two .small-row .col-2.last .row-1 .col-4-1{
     width: 50%;
 }
@@ -1257,6 +1265,8 @@ body.groupwithdraw a.groupwithdraw,
         padding: 2rem 1rem 4rem;
     }
    
+/* 
+© Primobux 2021 Made By Mustapha Ettanti "https://twitter.com/DevMustapha"  designed by Mustapha Ettanti */
 
     .container.stats .row .content_row .col{
         width: 40%;
@@ -1450,6 +1460,9 @@ body.groupwithdraw a.groupwithdraw,
     }
     
 }
+
+/* 
+© Primobux 2021 Made By Mustapha Ettanti "https://twitter.com/DevMustapha"  designed by Mustapha Ettanti */
 
 @media screen and (max-width: 580px) {
     .navbar-brand .img-fluid {
