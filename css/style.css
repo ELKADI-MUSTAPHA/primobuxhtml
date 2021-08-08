@@ -1162,6 +1162,7 @@ body.groupwithdraw a.groupwithdraw,
 }
 
 .container.withdraw.promocodes .row.two .col input {
+    font-size: 1rem;
     width: 90%;
     background-color: rgb(231, 231, 231);
 }
@@ -1432,6 +1433,9 @@ body.groupwithdraw a.groupwithdraw,
     }
     .container.profile .row .col.two .small-row .col-2.last .row-1 .col-4-1 {
         margin: 1rem auto;
+    }
+    .container.withdraw.promocodes .row.two .col button {
+        font-size: 1.2rem;
     }
     
     
