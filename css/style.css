@@ -1401,7 +1401,7 @@ body.groupwithdraw a.groupwithdraw,
         margin: 2rem auto;
         width: 100%;
     }
-    @supports not (position: initial){
+    @supports not (width: fit-content){
         .container.stats .row .content_row .col{
             position: relative;
         }
