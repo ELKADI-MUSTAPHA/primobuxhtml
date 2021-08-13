@@ -1405,6 +1405,16 @@ body.groupwithdraw a.groupwithdraw,
         .container.stats .row .content_row .col{
             position: relative;
         }
+        .container.stats .row .content_row .col.one {
+            left: auto !important;
+        }
+        .container.stats .row .content_row .col.two {
+            right: auto !important;
+        }
+        .container.stats .row .content_row .col.three {
+            left: auto !important;
+            top: auto !important;
+        }
     }
     .container.stats .row .content_row .col .card {
         width: 100%;
