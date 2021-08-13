@@ -110,7 +110,7 @@ nav ul li{
     background-color: #f9f9f9;
     min-width: 200px;
     line-height: 3;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 20%);
     padding: 6px 10px;
     z-index: 1;
     border-radius: 10px;
@@ -200,7 +200,7 @@ nav .blc a{
     justify-content: center;
 }
 nav ul li .withdraw .balance {
-    color: rgb(215 225 216);
+    color: rgb(215, 225, 216);
     font-size: 1rem;
     font-weight: 500;
     margin-right: 0.2rem;
@@ -378,12 +378,12 @@ body.groupwithdraw a.groupwithdraw,
     align-items: center;
     text-align: center;
     font-size: 1.5em;
-    color: rgb(88 199 250 / 0%);
+    color: rgb(88, 199, 250, 0%);
     cursor: pointer;
   }
   
   .step:hover {
-    color: rgb(88 199 250 / 100%);
+    color: rgb(88, 199, 250, 100%);
     transition: color 1s;
   }
   .step:hover:before, .step:hover:after {
@@ -567,7 +567,7 @@ body.groupwithdraw a.groupwithdraw,
     line-height: 2;
 }
 .legitimate.footer .ttl{
-    color: rgb(198 213 212);
+    color: rgb(198, 213, 212);
     margin: 2rem auto;
     font-size: 2rem;
     font-weight: 900;
@@ -593,7 +593,7 @@ body.groupwithdraw a.groupwithdraw,
 .page-footer .container {
     margin: 0 auto 1rem;
     width: 80%;
-    background: rgb(30 39 68);
+    background: rgb(30, 39, 68);
     box-shadow: 0 2px 10px 4px rgba(123, 223, 253, 0.75), 0 10px 8px 6px rgba(126, 224, 253, 0.22);
 }
 
@@ -602,7 +602,7 @@ body.groupwithdraw a.groupwithdraw,
     display: flex;
     padding: 2rem;
     justify-content: center;
-    color: rgb(239 239 239);
+    color: rgb(239, 239, 239);
 }
 
 .page-footer .row .col{
@@ -625,7 +625,7 @@ body.groupwithdraw a.groupwithdraw,
 .page-footer .row .col.one .list-unstyled li a{
     font-size: 1rem;
     text-decoration: none;
-    color: rgb(224 222 222);
+    color: rgb(224, 222, 222);
     letter-spacing: 3px;
     margin-left: 0.5rem;
 }
@@ -675,7 +675,7 @@ body.groupwithdraw a.groupwithdraw,
     color: white;
     width: 70%;
     background: #00172c;
-    box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
+    box-shadow: 0 4px 8px 4px rgb(123, 223, 253, 75%), 0 10px 20px 30px rgb(126, 224, 253, 22%);
 }
 .earn-container .row .part-one .col.offerwalls{
     text-align: center;
@@ -750,7 +750,7 @@ body.groupwithdraw a.groupwithdraw,
 }
 
 .earn-container .row .part-one .col .btn-primary {
-    box-shadow: 0 1px 10px 1px rgb(123 223 253 / 75%), 0 1px 10px 1px rgb(126 224 253 / 22%);
+    box-shadow: 0 1px 10px 1px rgb(123, 223, 253, 75%), 0 1px 10px 1px rgb(126, 224, 253, 22%);
     background: #03057d;
     padding: 0.7rem 0.8rem;
     border: none;
@@ -759,7 +759,7 @@ body.groupwithdraw a.groupwithdraw,
 }
 
 .earn-container .row .part-one .col .btn-primary:hover {
-    box-shadow: 0 2px 15px 2px rgb(123 223 253 / 75%), 0 2px 15px 2px rgb(126 224 253 / 22%);
+    box-shadow: 0 2px 15px 2px rgb(123, 223, 253, 75%), 0 2px 15px 2px rgb(126, 224, 253, 22%);
     background: rgb(0, 59, 98);
 }
 .earn-container .row .part-one .col .offerwalls{
@@ -780,7 +780,7 @@ body.groupwithdraw a.groupwithdraw,
 .earn-container .row .col .offerwallholder{
     height: 1000px;
     background: #00172c;
-    box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
+    box-shadow: 0 4px 8px 4px rgb(123, 223, 253, 75%), 0 10px 20px 30px rgb(126, 224, 253, 22%);
 }
 
 .swal2-file, .swal2-input, .swal2-textarea {
@@ -799,7 +799,7 @@ body.groupwithdraw a.groupwithdraw,
     width: 70%;
     margin: 0.5rem auto;
     padding: 2rem;
-    color: rgb(249 248 248);
+    color: rgb(249, 248, 248);
 }
 
 
@@ -817,13 +817,13 @@ body.groupwithdraw a.groupwithdraw,
     padding: 2rem 1rem;
     margin: auto 2rem;
     background: #00172c;
-    box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
+    box-shadow: 0 4px 8px 4px rgb(123, 223, 253, 75%), 0 10px 20px 30px rgb(126, 224, 253, 22%);
 }
 
 .container.withdraw .row.two .col .h3{
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: rgb(245 245 245);
+    color: rgb(245, 245, 245);
 }
 
 
@@ -855,7 +855,7 @@ body.groupwithdraw a.groupwithdraw,
     padding: 2rem 1rem;
     margin: auto 2rem;
     background: #00172c;
-    box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
+    box-shadow: 0 4px 8px 4px rgb(123, 223, 253, 75%), 0 10px 20px 30px rgb(126, 224, 253, 22%);
     min-height: 800px;
 }
 
@@ -921,7 +921,7 @@ body.groupwithdraw a.groupwithdraw,
     font-size: 1.2rem;
     padding: 0.6rem 1.3rem;
     margin: 0 0.5rem 1rem;
-    color: rgb(0 0 0);
+    color: rgb(0, 0, 0);
     background: #fbfbfbe8;
     box-shadow: 0 1px 10px 1px rgba(123, 223, 253, 0.75), 0 1px 8px 1px rgba(126, 224, 253, 0.22);
     font-weight: 500;
@@ -1001,7 +1001,7 @@ body.groupwithdraw a.groupwithdraw,
     padding: 1rem 0;
     width: 80%;
     margin: 2rem auto;
-    color: rgb(234 233 233);
+    color: rgb(234, 233, 233);
 }
 
 .container.profile .row .col.one{
@@ -1009,7 +1009,7 @@ body.groupwithdraw a.groupwithdraw,
     padding: 2rem 1rem;
     text-align: center;
     background: #00172c;
-    box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);
+    box-shadow: 0 4px 8px 4px rgb(123, 223, 253, 75%), 0 10px 20px 30px rgb(126, 224, 253, 22%);
 }
 
 .container.profile .row .col.one .card-body{
@@ -1051,11 +1051,11 @@ body.groupwithdraw a.groupwithdraw,
     margin: 0 1rem 2rem;
     float: left;
     background: #00172c;
-    box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);}
+    box-shadow: 0 4px 8px 4px rgb(123, 223, 253, 75%), 0 10px 20px 30px rgb(126, 224, 253, 22%);}
 
 
 .container.profile .row .col.two .small-row .col-2 .yellow-number{
-    color: rgb(254 177 0);
+    color: rgb(254, 177, 0);
 }
 
 
@@ -1111,7 +1111,7 @@ body.groupwithdraw a.groupwithdraw,
 .container.profile .row.two .col{
     width: 100%;
     background: #00172c;
-    box-shadow: 0 4px 8px 4px rgb(123 223 253 / 75%), 0 10px 20px 30px rgb(126 224 253 / 22%);    text-align: center;
+    box-shadow: 0 4px 8px 4px rgb(123, 223, 253, 75%), 0 10px 20px 30px rgb(126, 224, 253, 22%);    text-align: center;
     padding: 2rem 1rem;
 }
 
@@ -1196,14 +1196,14 @@ body.groupwithdraw a.groupwithdraw,
 
 @supports not (width: fit-content){
     .navbar-brand,
-    .blc,
-    .centering, 
-    .stats, 
-    .card-body, 
-    .ttl, 
-    .list-unstyled, 
-    .col h5, 
-    .col-4-2
+    nav .blc,
+    .lander .info .centering, 
+    .container.stats .row .stats, 
+    .container.stats .row .content_row .col .card .card-body, 
+    .legitimate.footer .ttl, 
+    .page-footer .row .col.one .list-unstyled, 
+    .page-footer .row .col h5, 
+    .container.profile .row .col.two .small-row .col-2.last .row-1 .col-4-2
     {
         display: table;
     }
