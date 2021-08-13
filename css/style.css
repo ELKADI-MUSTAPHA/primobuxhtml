@@ -1196,7 +1196,6 @@ body.groupwithdraw a.groupwithdraw,
 
 @supports not (width: fit-content){
     .navbar-brand,
-    nav .blc,
     .lander .info .centering, 
     .container.stats .row .stats, 
     .container.stats .row .content_row .col .card .card-body, 
@@ -1275,6 +1274,11 @@ body.groupwithdraw a.groupwithdraw,
         color: rgb(3, 3, 85);
         background-position: 0 100%;
     }
+    .links:focus {
+        transition: .5s;
+        color: rgb(3, 3, 85);
+        background-position: 0 100%;
+    }
     #check:checked ~ ul {
         left: 0;
     }
@@ -1291,8 +1295,8 @@ body.groupwithdraw a.groupwithdraw,
         padding: 2rem 1rem 4rem;
     }
     @supports not (display: grid){
-        .container .steps .step{
-           display: block;
+        .container .steps{
+           display: inherit;
         }
     }
    
