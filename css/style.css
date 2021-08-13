@@ -49,6 +49,7 @@ body {
     padding: 0px;
     box-sizing: border-box;
 }
+label,
 input,
 textarea,
 button,
@@ -259,7 +260,7 @@ body.groupwithdraw a.groupwithdraw,
     /* background: #e5ff52; */
     transition: .5s;
     color: rgb(3, 3, 85);
-    background: yellow !important;
+    background-color: yellow !important;
 }
 }
 .checkbtn{
