@@ -569,6 +569,12 @@ body.groupwithdraw a.groupwithdraw,
     justify-content: center;
 }
 
+@supports not (display: flex){
+    .container.stats .row .content_row .col .card .card-body .stat{
+        display: block;
+    }
+    
+}
 #useramount, #paidout, #stock {
     font-size: 1.8rem;
     color: #ffb919;
