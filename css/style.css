@@ -183,8 +183,7 @@ nav ul li .links.withdraw {
 nav .blc {
     padding: 0.4rem 0.5rem;
     position: relative;
-    /* padding-right: 1.8rem; */
-    margin-right: 1rem;
+    margin-right: 0.8rem !important;
     width: fit-content;
     border-radius: 15px;
     margin: 0 auto;
@@ -785,7 +784,7 @@ body.groupwithdraw a.groupwithdraw,
 }
 
 .swal2-file, .swal2-input, .swal2-textarea {
-    color: white;
+    color: white !important;
 }
 
 
@@ -867,6 +866,11 @@ body.groupwithdraw a.groupwithdraw,
     display: grid;
 }
 
+@supports not (display: grid){
+    .container.withdraw .row.three .col .alert-warning{
+       display: block;
+    }
+}
 
 
 
@@ -1189,6 +1193,21 @@ body.groupwithdraw a.groupwithdraw,
     padding-bottom: 0.6rem;
     border-bottom: 1px solid yellow;
 }
+
+@supports not (width: fit-content){
+    .navbar-brand,
+    .blc,
+    .centering, 
+    .stats, 
+    .card-body, 
+    .ttl, 
+    .list-unstyled, 
+    .col h5, 
+    .col-4-2
+    {
+        display: table;
+    }
+}
 @media screen and (min-width: 1300px) {
     .container.profile .row .col.one .profile-img img {
         width: 60%;
@@ -1216,6 +1235,11 @@ body.groupwithdraw a.groupwithdraw,
 @media screen and (max-width: 940px) {
     .checkbtn {
         display: block;
+    }
+    @supports not (display: block){
+        .checkbtn{
+           display: inherit;
+        }
     }
     nav ul {
         position: fixed;
@@ -1265,6 +1289,11 @@ body.groupwithdraw a.groupwithdraw,
         width: 80%;
         margin: 3rem auto;
         padding: 2rem 1rem 4rem;
+    }
+    @supports not (display: grid){
+        .container .steps .step{
+           display: block;
+        }
     }
    
 /* 
@@ -1352,7 +1381,11 @@ body.groupwithdraw a.groupwithdraw,
         display: grid;
         padding: 2rem 0;
     }
-    
+    @supports not (display: grid){
+        .page-footer .row{
+           display: block;
+        }
+    }
 
     .page-footer .row .col{
         width: auto;

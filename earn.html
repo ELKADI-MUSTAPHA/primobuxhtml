@@ -84,12 +84,15 @@
                                     <button  class="btn-primary" onclick="addClass('Lootably')">Lootably</button>
                                     <button  class="btn-primary" onclick="addClass('Cpx-research')">CPXResearch</button>
                                 </div>
-                                <div class="btns two">
-                                    <button class="btn-primary fb"><i class="fab fa-facebook mr-1"></i> Subscribe for 0.5 R$</button>
-                                    <button class="btn-primary yt"><i class="fab fa-youtube mr-1"></i> Subscribe for 0.5 R$</button>
-                                    <button class="btn-primary tw"><i class="fab fa-twitter mr-1"></i> Follow us for 0.25 R$</button>
-                                    <button class="btn-primary dc"><i class="fab fa-discord mr-1"></i> Join for 0.5 R$</button>
-                                    <button class="btn-primary is"><i class="fab fa-instagram mr-1"></i> Follow for 0.5 R$</button>
+                                <!-- add id = socials in div btns
+                                    and add data-social to all social link
+                                -->
+                                <div class="btns two" id="socials">
+                                    <button id="social-btn" data-social="1" onclick="javascript:window.open('#', '_blank');"   class="btn-primary fb"><i class="fab fa-facebook mr-1"></i> Subscribe for 0.5 R$</button>
+                                    <button id="social-btn" data-social="2"  onclick="javascript:window.open('#', '_blank');"  class="btn-primary yt"><i class="fab fa-youtube mr-1"></i> Subscribe for 0.5 R$</button>
+                                    <button id="social-btn" data-social="3"  onclick="javascript:window.open('#', '_blank');"  class="btn-primary tw"><i class="fab fa-twitter mr-1"></i> Follow us for 0.25 R$</button>
+                                    <button id="social-btn" data-social="4"  onclick="javascript:window.open('#', '_blank');"  class="btn-primary dc"><i class="fab fa-discord mr-1"></i> Join for 0.5 R$</button>
+                                    <button id="social-btn" data-social="5"  onclick="javascript:window.open('#', '_blank');"  class="btn-primary is"><i class="fab fa-instagram mr-1"></i> Follow for 0.5 R$</button>
                                 </div>
                             </div>
                         </div>
